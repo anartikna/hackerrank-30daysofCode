@@ -39,6 +39,20 @@ if __name__ == '__main__':
       print(temparr[member], end=' ')
 
       #or
+
+     ''' if __name__ == '__main__':
+    n = int(input())
+    temparr = []
+    arr = list(map(int, input().rstrip().split()))
+    print(*arr[::-1])
+
+    where * is needed to unpack it from the lit form and present the elements
+'''
+#or
+'''
+print(' '.join(map(str, *reversed(arr))))
+'''
+
       #print(" ".join(map(str, arr[::-1])))
       '''
       map() function returns a map object(which is an iterator) of the results after           applying the given function to each item of a given iterable (list, tuple etc.)
