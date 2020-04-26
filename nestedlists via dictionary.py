@@ -30,7 +30,12 @@ if __name__ == '__main__':
     #in its place we can also use b=sorted(list(set(scorelist)))[1] 
     scorelist = list(dict.fromkeys(scorelist))
     b=sorted(scorelist)[1] #taking out the second element coz it has no repeats
-
+    #print(scorelist)
+    #o/p: [21.0, 31.0, 41.0]
+    #print(dict)
+    #o/p: <class 'dict'>
+    #print(str(dict))
+    #o/p: <class 'dict'>
     for k,v in sorted(students):
         if v==b:
             print(k)
